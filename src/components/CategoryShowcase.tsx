@@ -10,12 +10,12 @@ export default function CategoryShowcase() {
     },
     {
       name: "Puder",
-      image: "/Puder.png", // Sørg for, at disse billeder ligger i public/
+      image: "https://cdn.shopify.com/s/files/1/0859/1133/9336/files/Puder.png?v=1762614030", // Sørg for, at disse billeder ligger i public/
       link: "/collections/puder",
     },
     {
       name: "Sengetøj",
-      image: "/Sengetøj.png", // Sørg for, at disse billeder ligger i public/
+      image: "https://cdn.shopify.com/s/files/1/0859/1133/9336/files/Sengetoejen.png?v=1762614936", // Sørg for, at disse billeder ligger i public/
       link: "/collections/sengetoj",
     },
   ]
