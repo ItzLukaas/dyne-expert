@@ -5,17 +5,17 @@ export default function CategoryShowcase() {
   const categories = [
     {
       name: "Dyner",
-      image: "/dyner.webp", // Sørg for, at disse billeder ligger i public/
+      image: "https://raw.githubusercontent.com/ItzLukaas/dyne-expert/refs/heads/master/public/Dyner.webp", // Sørg for, at disse billeder ligger i public/
       link: "/collections/dyner",
     },
     {
       name: "Puder",
-      image: "/puder.webp", // Sørg for, at disse billeder ligger i public/
+      image: "https://raw.githubusercontent.com/ItzLukaas/dyne-expert/refs/heads/master/public/Puder.webp", // Sørg for, at disse billeder ligger i public/
       link: "/collections/puder",
     },
     {
       name: "Sengetøj",
-      image: "/sengetøj.webp", // Sørg for, at disse billeder ligger i public/
+      image: "https://raw.githubusercontent.com/ItzLukaas/dyne-expert/refs/heads/master/public/Senget%C3%B8j.webp", // Sørg for, at disse billeder ligger i public/
       link: "/collections/sengetoj",
     },
   ]
