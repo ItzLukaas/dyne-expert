@@ -4,9 +4,9 @@ import type { NextConfig } from "next"
 process.env.NEXT_DISABLE_TURBOPACK = "1"
 
 const nextConfig: NextConfig = {
-  // 🧩 Slå eksperimentel turbo fra helt
+  // 🧩 Fjern turbo-indstillingen, da den ikke længere er gyldig
   experimental: {
-    turbo: false,
+    // turbo: false,  // Fjern denne linje
   },
 
   // 🖼️ Shopify billeder
