@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
+// Brug miljøvariablen RESEND_API_KEY
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: Request) {
@@ -13,7 +14,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "Dyne Expert <no-reply@dyne-expert.dk>",
       to: "kontaktsvendsen@gmail.com",
-      replyTo: email?.toString(), // Opdateret til replyTo
+      replyTo: email?.toString(), // Brug replyTo i stedet for reply_to
       subject: `Ny besked fra ${name}`,
       html: `
         <h2>Ny kontaktbesked fra Dyne Expert hjemmesiden</h2>
