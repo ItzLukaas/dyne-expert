@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "Dyne Expert <no-reply@dyne-expert.dk>",
       to: "kontaktsvendsen@gmail.com",
-      reply_to: email?.toString(),
+      replyTo: email?.toString(), // Opdateret til replyTo
       subject: `Ny besked fra ${name}`,
       html: `
         <h2>Ny kontaktbesked fra Dyne Expert hjemmesiden</h2>

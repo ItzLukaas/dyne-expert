@@ -1,12 +1,6 @@
-import type { NextConfig } from "next"
-
-// 🚀 Slå Turbopack fra (virker på Windows + macOS)
-process.env.NEXT_DISABLE_TURBOPACK = "1"
-
-const nextConfig: NextConfig = {
-  // 🧩 Fjern turbo-indstillingen, da den ikke længere er gyldig
+const nextConfig = {
   experimental: {
-    // turbo: false,  // Fjern denne linje
+    turbopack: {}, // Aktivér Turbopack
   },
 
   // 🖼️ Shopify billeder
@@ -17,11 +11,6 @@ const nextConfig: NextConfig = {
         hostname: "cdn.shopify.com",
       },
     ],
-  },
-
-  // ⚙️ Valgfrit: tillad yderligere tilpasning af webpack hvis nødvendigt
-  webpack: (config) => {
-    return config
   },
 }
 
