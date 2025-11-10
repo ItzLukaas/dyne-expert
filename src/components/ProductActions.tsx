@@ -48,7 +48,7 @@ export default function ProductActions({ product }: { product: any }) {
         mutation { cartCreate { cart { id } } }
       `)
       cartId = res.data.cartCreate.cart.id
-      localStorage.setItem("cartId", cartId)
+      localStorage.setItem("cartId", cartId || "defaultCartId") // Sikre en standard værdi
     }
 
     // 2️⃣ Tilføj valgt variant til kurven
