@@ -187,7 +187,6 @@ export default function Footer() {
               { src: "/Apple-Pay.png", alt: "Apple Pay" },
               { src: "/Google-Pay.png", alt: "Google Pay" },
               { src: "/MobilePay.webp", alt: "MobilePay" },
-              { src: "/Klarna.png", alt: "Klarna" },
               { src: "/GLS.png", alt: "GLS" },
             ].map((logo) => (
               <div
