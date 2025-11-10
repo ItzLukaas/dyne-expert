@@ -86,7 +86,7 @@ export default function Footer() {
                 className="p-2 rounded-full hover:opacity-80 transition flex items-center justify-center"
               >
                 <Image
-                  src="/facebook-logo.png"
+                  src="/Facebook.svg"
                   alt="Facebook"
                   width={28}
                   height={28}
