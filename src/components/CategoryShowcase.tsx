@@ -5,7 +5,7 @@ export default function CategoryShowcase() {
   const categories = [
     {
       name: "Dyner",
-      image: "/GLS.png", // Sørg for, at disse billeder ligger i public/
+      image: "https://cdn.shopify.com/s/files/1/0859/1133/9336/files/DynerHvidBaggrund.png?v=1762613668", // Sørg for, at disse billeder ligger i public/
       link: "/collections/dyner",
     },
     {
