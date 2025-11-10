@@ -15,7 +15,7 @@ export default function CategoryShowcase() {
     {
       name: "Sengetøj",
       image: "/sengetøj.webp",
-      link: "/k/sengetoj",
+      link: "/collections/sengetoj",
     },
   ]
 
