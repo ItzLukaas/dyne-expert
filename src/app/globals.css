@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Base === */
+html, body {
+  @apply bg-white text-gray-900 antialiased scroll-smooth font-sans;
+}
+
+h1, h2, h3, h4 {
+  @apply tracking-tight text-brand-deep font-sans;
+}
+
+p {
+  @apply leading-relaxed text-gray-700;
+}
+
+a {
+  @apply text-brand-deep transition-colors duration-200;
+}
+a:hover {
+  @apply text-brand-accent;
+}
+
+/* === Components === */
+.btn-primary {
+  @apply bg-brand-deep text-white font-semibold px-6 py-3 rounded-full 
+         hover:bg-brand-accent transition;
+}
+
+.btn-secondary {
+  @apply border border-brand-accent text-brand-accent font-semibold px-6 py-3 rounded-full 
+         hover:bg-brand-mid transition;
+}
+
+.card {
+  @apply rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* === Utilities === */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌿 Diskret fade for “Kundernes foretrukne dyne” */
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #C9C9C9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #B2B2B2;
+}
+::-webkit-scrollbar-track {
+  background-color: #F2F2F2;
+}
+
+/* === Modal pop animation === */
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-modalPop {
+  animation: modalPop 0.3s ease-out forwards;
+}
+
+/* === Modal backdrop === */
+.modal-backdrop {
+  @apply fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-[999];
+}
