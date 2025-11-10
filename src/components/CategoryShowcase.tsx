@@ -5,7 +5,7 @@ export default function CategoryShowcase() {
   const categories = [
     {
       name: "Dyner",
-      image: "/Dyner.png", // Sørg for, at disse billeder ligger i public/
+      image: "/GLS.png", // Sørg for, at disse billeder ligger i public/
       link: "/collections/dyner",
     },
     {
