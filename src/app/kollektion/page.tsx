@@ -11,18 +11,21 @@ export default function KollektionPage() {
   const collections = [
     {
       name: "Dyner",
-      image: "https://cdn.shopify.com/s/files/1/0859/1133/9336/files/DynerHvidBaggrund.png?v=1762613668", // Sørg for, at disse billeder ligger i public/
+      image: "/dyner.webp",
       link: "/collections/dyner",
+      desc: "",
     },
     {
       name: "Puder",
-      image: "https://cdn.shopify.com/s/files/1/0859/1133/9336/files/Puder.png?v=1762614030", // Sørg for, at disse billeder ligger i public/
+      image: "/puder.webp",
       link: "/collections/puder",
+      desc: "",
     },
     {
       name: "Sengetøj",
-      image: "https://cdn.shopify.com/s/files/1/0859/1133/9336/files/Sengetoejen.png?v=1762614936", // Sørg for, at disse billeder ligger i public/
+      image: "/sengetøj.webp",
       link: "/collections/sengetoj",
+      desc: ""
     },
   ]
 
