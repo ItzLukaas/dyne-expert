@@ -22,7 +22,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/hero-dyne.png", // <-- dit lokale billede bruges her
+        url: "https://dyne-expert-6chb894xm-itzlukaas-projects.vercel.app/vores-historie-2.webp", // <-- dit lokale billede bruges her
         width: 1200,
         height: 630,
         alt: "Dyne Expert – Kvalitetsdyner & puder",
