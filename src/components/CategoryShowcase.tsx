@@ -1,20 +1,21 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CategoryShowcase() {
   const categories = [
     {
       name: "Dyner",
-      image: "/dyner.webp",
+      image: "/dyner.webp", // Sørg for, at disse billeder ligger i public/
       link: "/collections/dyner",
     },
     {
       name: "Puder",
-      image: "/puder.webp",
+      image: "/puder.webp", // Sørg for, at disse billeder ligger i public/
       link: "/collections/puder",
     },
     {
       name: "Sengetøj",
-      image: "/sengetøj.webp",
+      image: "/sengetøj.webp", // Sørg for, at disse billeder ligger i public/
       link: "/collections/sengetoj",
     },
   ]
@@ -30,9 +31,11 @@ export default function CategoryShowcase() {
             href={cat.link}
             className="relative group rounded-2xl overflow-hidden shadow-sm"
           >
-            <img
-              src={cat.image}
+            <Image
+              src={cat.image} // Brug next/image her
               alt={cat.name}
+              width={500} // Giv dimensioner til billedet
+              height={340} // Giv dimensioner til billedet
               className="w-full h-[340px] object-cover transform group-hover:scale-105 transition duration-500"
             />
 
